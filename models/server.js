@@ -11,7 +11,6 @@ class Server {
 
         //Middleware
 
-
         this.middleware();
 
         
@@ -27,7 +26,7 @@ class Server {
 
         this.app.use( cors());
         // Directorio publico
-        this.app.use(express.static('public'));
+        this.app.use(express.static('Public'));
 
         // lectura y parseo del Body
         this.app.use( express.json() );
